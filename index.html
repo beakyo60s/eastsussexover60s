@@ -1820,20 +1820,6 @@ East Sussex Over 60s FC</textarea>
     .catch(() => showToast('Something went wrong — please try again'));
   });
 
-</script><!-- LIGHTBOX -->
-<div class="lightbox" id="lightbox" onclick="closeLightbox()">
-  <button class="lightbox-close" onclick="closeLightbox()">✕</button>
-  <img id="lightbox-img" src="" alt="">
-</div>
-<script>
-function openLightbox(el) {
-  var img = el.querySelector('img');
-  document.getElementById('lightbox-img').src = img.src;
-  document.getElementById('lightbox').classList.add('open');
-}
-function closeLightbox() {
-  document.getElementById('lightbox').classList.remove('open');
-}
 <div id="photo-lightbox" style="display:none;position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,0.95);z-index:9999;cursor:pointer;text-align:center;" onclick="this.style.display='none'">
   <img id="photo-lightbox-img" src="" style="max-width:90vw;max-height:90vh;margin-top:5vh;border:2px solid #F4720B;">
 </div>

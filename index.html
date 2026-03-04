@@ -1834,14 +1834,16 @@ function openLightbox(el) {
 function closeLightbox() {
   document.getElementById('lightbox').classList.remove('open');
 }
-<div id="photo-lightbox" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,0.95);z-index:9999;cursor:pointer;align-items:center;justify-content:center;" onclick="this.style.display='none'">
-  <img id="photo-lightbox-img" src="" style="max-width:90vw;max-height:90vh;object-fit:contain;border:2px solid #F4720B;display:block;margin:auto;">
+<div id="photo-lightbox" style="display:none;position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,0.95);z-index:9999;cursor:pointer;text-align:center;" onclick="this.style.display='none'">
+  <img id="photo-lightbox-img" src="" style="max-width:90vw;max-height:90vh;margin-top:5vh;border:2px solid #F4720B;">
+</div>
 <script>
 function openLightbox(el) {
   var img = el.querySelector('img');
-  var lb = document.getElementById('photo-lightbox');
-  document.getElementById('photo-lightbox-img').src = img.src;
-  lb.style.display = 'flex';
+  if (img) {
+    document.getElementById('photo-lightbox-img').src = img.src;
+    document.getElementById('photo-lightbox').style.display = 'block';
+  }
 }
 </script>
 </body>

@@ -1835,8 +1835,7 @@ function closeLightbox() {
   document.getElementById('lightbox').classList.remove('open');
 }
 <div id="photo-lightbox" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,0.95);z-index:9999;cursor:pointer;align-items:center;justify-content:center;" onclick="this.style.display='none'">
-  <img id="photo-lightbox-img" src="" style="max-width:90vw;max-height:90vh;object-fit:contain;border:2px solid #F4720B;">
-</div>
+  <img id="photo-lightbox-img" src="" style="max-width:90vw;max-height:90vh;object-fit:contain;border:2px solid #F4720B;display:block;margin:auto;">
 <script>
 function openLightbox(el) {
   var img = el.querySelector('img');

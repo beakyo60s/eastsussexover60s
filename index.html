@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -1093,22 +1094,6 @@
     .fixture-details { flex-direction: column; gap: 0.75rem; }
     .hero-buttons { flex-wrap: wrap; justify-content: center; gap: 0.75rem; }
   }
-   .squad-grid {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 10px 20px;
-      margin-top: 16px;
-      padding-top: 16px;
-      border-top: 1px solid #444;
-    }
-    .squad-player {
-      font-size: 0.95rem;
-    }
-    .squad-num {
-      color: #e87722;
-      font-weight: bold;
-      margin-right: 4px;
-    }
 </style>
 </head>
 <body>
@@ -1157,6 +1142,30 @@
       </div>
     </a>
   </div>
+
+  <div class="countdown-block">
+    <div class="countdown-label">Countdown to the National Final</div>
+    <div class="countdown-match">East Sussex Over 60s vs Worcestershire Over 60s · Sunday 19th April · 2:00 PM</div>
+    <div class="countdown-match" style="font-size:clamp(0.75rem,1.8vw,1rem); margin-top:0.25rem;">The Exclusive Networks Stadium, Alton FC, Hampshire</div>
+    <div id="countdown-timer" class="countdown-timer">
+      <div class="countdown-unit">
+        <div class="countdown-number" id="countdown-days">--</div>
+        <div class="countdown-unit-label">Days</div>
+      </div>
+      <div class="countdown-unit">
+        <div class="countdown-number" id="countdown-hours">--</div>
+        <div class="countdown-unit-label">Hours</div>
+      </div>
+      <div class="countdown-unit">
+        <div class="countdown-number" id="countdown-mins">--</div>
+        <div class="countdown-unit-label">Mins</div>
+      </div>
+      <div class="countdown-unit">
+        <div class="countdown-number" id="countdown-secs">--</div>
+        <div class="countdown-unit-label">Secs</div>
+      </div>
+    </div>
+  </div>
 </div>
 
 
@@ -1192,43 +1201,7 @@
 <!-- NEWS -->
 <section id="news">
   <div class="section-title">Latest News</div>
-</div>
- <div class="news-card">
-   <div class="news-item">
-  <div class="news-date">14 APRIL 2026</div>
-  <h3>Squad Announcement</h3>
-  <p>Player Manager Alan Osman has announced the squad of 16 for the National Cup Final on Sunday.</p>
-  <p>Here's the squad for Sunday. I shouldn't need to tell you who we're playing against or the ko time, or where it is. Please make sure you're there at least one hour and 15 mins before ko.</p>
-  <p>One other thing to say is please be honest about injuries and niggles this week. Let me know privately. I know we all want to play in a final, but so do several good players not on this list, so be honest, and be fit and ready. Let's give it our best. One game, don't leave anything at home... including your boots and brains. Let's do it!</p>
-  <div class="squad-grid">
-    <div class="squad-player"><span class="squad-num">1.</span> Koosha Movafagh</div>
-    <div class="squad-player"><span class="squad-num">2.</span> Simon Corke</div>
-    <div class="squad-player"><span class="squad-num">3.</span> John O'Meara</div>
-    <div class="squad-player"><span class="squad-num">4.</span> Bob Smith</div>
-    <div class="squad-player"><span class="squad-num">5.</span> Steve Burge</div>
-    <div class="squad-player"><span class="squad-num">6.</span> Nigal Carter</div>
-    <div class="squad-player"><span class="squad-num">7.</span> Andy Williams (c)</div>
-    <div class="squad-player"><span class="squad-num">8.</span> Paul Elphick</div>
-    <div class="squad-player"><span class="squad-num">9.</span> Steve Turner</div>
-    <div class="squad-player"><span class="squad-num">10.</span> Colin Riggs</div>
-    <div class="squad-player"><span class="squad-num">11.</span> Alan Osman</div>
-    <div class="squad-player"><span class="squad-num">12.</span> Dave Bridges</div>
-    <div class="squad-player"><span class="squad-num">13.</span> Keith Chamberlain</div>
-    <div class="squad-player"><span class="squad-num">14.</span> David Brooks</div>
-    <div class="squad-player"><span class="squad-num">15.</span> John Fraser</div>
-    <div class="squad-player"><span class="squad-num">16.</span> Beaky</div>
-   </div>
 
-</div>
-</div>
-
-<div class="news-card">
-  <div class="news-date">4 March 2026</div>
-  <div class="news-title">Our Sponsor Folk2Folk Blogs About Our Achievement In Reaching The National Final</div>
-  <div class="news-body">
-    Folk2Folk, our proud sponsor, have written a fantastic piece about the team's journey to the National Final. Read the full blog post here: <a href="https://folk2folk.com/blog/from-regional-roots-to-a-national-final/" target="_blank" style="color:var(--orange); text-decoration:underline;">From Regional Roots To A National Final</a>
-  </div>
-</div>
   <div class="news-card">
     <div class="news-date">2 March 2026</div>
     <div class="news-title">We're In The National Final!</div>
@@ -1351,6 +1324,56 @@
   <div class="divider"></div>
 
   <div id="fixtures-list">
+    <!-- Feckers v East Sussex -->
+    <div class="fixture-card">
+      <div class="fixture-banner">⚽ FRIENDLY</div>
+      <div class="fixture-competition">Friendly</div>
+      <div class="fixture-teams">
+        <div class="fixture-team home">Feckers</div>
+        <div class="fixture-vs">VS</div>
+        <div class="fixture-team">East Sussex Over 60s</div>
+      </div>
+      <div class="fixture-details">
+        <div class="fixture-detail">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+          Sunday 22nd March 2026
+        </div>
+        <div class="fixture-detail">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          Kick-off 11:00am
+        </div>
+        <div class="fixture-detail">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>
+          Bexhill Sixth Form College, Bexhill-on-Sea
+        </div>
+      </div>
+    </div>
+
+    <!-- Interclub Friendly -->
+    <div class="fixture-card">
+      <div class="fixture-banner">⚽ INTERCLUB FRIENDLY</div>
+      <div class="fixture-competition">Interclub Friendly</div>
+      <div class="fixture-teams">
+        <div class="fixture-team home">East Sussex Over 60s</div>
+        <div class="fixture-vs">VS</div>
+        <div class="fixture-team">East Sussex Over 60s</div>
+      </div>
+      <div class="fixture-details">
+        <div class="fixture-detail">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+          Sunday 29th March 2026
+        </div>
+        <div class="fixture-detail">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          Kick-off 1:00pm
+        </div>
+        <div class="fixture-detail">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>
+          Bexhill Sixth Form College, Bexhill-on-Sea
+        </div>
+      </div>
+    </div>
+
     <div class="fixture-card">
       <div class="fixture-banner">⚽ FRIENDLY</div>
       <div class="fixture-competition">Friendly</div>
@@ -1374,55 +1397,7 @@
         </div>
       </div>
     </div>
-<!-- Feckers v East Sussex -->
-  <div class="fixture-card">
-    <div class="fixture-banner">UPCOMING</div>
-    <div class="fixture-competition">Friendly</div>
-    <div class="fixture-teams">
-      <div class="fixture-team home">Feckers</div>
-      <div class="fixture-vs">VS</div>
-      <div class="fixture-team">East Sussex Over 60s</div>
-    </div>
-    <div class="fixture-details">
-      <div class="fixture-detail">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
-        Sunday 22nd March 2026
-      </div>
-      <div class="fixture-detail">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-        11:00 AM
-      </div>
-      <div class="fixture-detail">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-        Bexhill Sixth Form College
-      </div>
-    </div>
-  </div>
 
-  <!-- Interclub Friendly -->
-  <div class="fixture-card">
-    <div class="fixture-banner">UPCOMING</div>
-    <div class="fixture-competition">Interclub Friendly</div>
-    <div class="fixture-teams">
-      <div class="fixture-team home">East Sussex Over 60s</div>
-      <div class="fixture-vs">VS</div>
-      <div class="fixture-team">East Sussex Over 60s</div>
-    </div>
-    <div class="fixture-details">
-      <div class="fixture-detail">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
-        Sunday 29th March 2026
-      </div>
-      <div class="fixture-detail">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-        1:00 PM
-      </div>
-      <div class="fixture-detail">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-        Bexhill Sixth Form College
-      </div>
-    </div>
-  </div>
     <div class="fixture-card">
       <div class="fixture-banner">🏆 NATIONAL FINAL</div>
       <div class="fixture-competition">National Over 60s Tournament — Final</div>
@@ -1519,22 +1494,7 @@
       <img src="images/gallery14.jpg" alt="Match Day">
       <div class="overlay"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></div>
     </div>
-...gallery14 block...</div>
-<div class="gallery-item" onclick="openLightbox(this)">
-  <img src="images/gallery15.jpg" alt="East Sussex Over 60s">
-  <div class="overlay"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></div>
-</div>
-<div class="gallery-item" onclick="openLightbox(this)">
-  <img src="images/gallery16.jpg" alt="East Sussex Over 60s">
-  <div class="overlay"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></div>
-</div>
-<div class="gallery-item" onclick="openLightbox(this)">
-  <img src="images/gallery17.jpg" alt="East Sussex Over 60s">
-  <div class="overlay"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></div>
-</div>
-</div>  <!-- this closes the gallery-grid -->
   </div>
-  
 </section>
 
 <!-- CONTACT -->
@@ -1568,11 +1528,11 @@
         </div>
         <div class="form-group">
           <label>Phone Number</label>
-          <input type="tel" name="phone" placeholder="Your phone number" required>
+          <input type="tel" name="phone" placeholder="Optional">
         </div>
         <div class="form-group">
           <label>Date of Birth</label>
-          <input type="date" name="dob" required>
+          <input type="date" name="date_of_birth" required>
         </div>
         <div class="form-group">
           <label>Tell Us About Yourself</label>
@@ -1868,6 +1828,30 @@ East Sussex Over 60s FC</textarea>
     })
     .catch(() => showToast('Something went wrong — please try again'));
   });
+  // COUNTDOWN TO NATIONAL FINAL
+  function updateCountdown() {
+    const target = new Date('2026-04-19T14:00:00').getTime();
+    const now = new Date().getTime();
+    const diff = target - now;
+
+    if (diff <= 0) {
+      document.getElementById('countdown-timer').innerHTML =
+        '<div class="countdown-expired">IT\'S MATCH DAY!</div>';
+      return;
+    }
+
+    const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const mins = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+    const secs = Math.floor((diff % (1000 * 60)) / 1000);
+
+    document.getElementById('countdown-days').textContent = days;
+    document.getElementById('countdown-hours').textContent = hours;
+    document.getElementById('countdown-mins').textContent = String(mins).padStart(2, '0');
+    document.getElementById('countdown-secs').textContent = String(secs).padStart(2, '0');
+  }
+  updateCountdown();
+  setInterval(updateCountdown, 1000);
 
 </script>
 </body>
